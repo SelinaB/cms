@@ -47,25 +47,9 @@ html, body, button {
   display: none !important;
   visibility: hidden; }
 
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Slabo 13px', sans-serif;
   color: #333; }
-
-h1 {
-  background-color: #99bf0d;
-  color: yellow;
-  font-size: 2em;
-  padding: 0.5em;
-  border-bottom: 0.0625em #999 solid; }
-
-p {
-  padding-bottom: 1em; }
 
 *, *:after, *:before {
   box-sizing: border-box; }
