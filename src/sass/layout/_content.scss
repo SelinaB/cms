@@ -1,0 +1,45 @@
+body{
+    font-family:'Slabo 13px', sans-serif;
+    }
+
+#services, #news, #references {
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    h2 {
+        color: $myblue;
+        font-size: 2em;
+        display: block;
+        height: 100%;
+
+    }
+}
+
+#services{
+    
+
+    img{
+		width:20%; //skalieren geht nicht?
+        height: auto;
+		display:block;
+        background-color: #EEEEEE;
+        border-radius:10px;
+        padding: 1em;
+        margin: 1em;
+    }
+    #images{
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-around;
+    }
+}
+
+#newscontent{
+    background-color: #EEEEEE;
+    border-radius:10px;
+    min-height: 100px;
+}
+
+#references{
+    height: 300px;
+}

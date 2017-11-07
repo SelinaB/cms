@@ -1,0 +1,44 @@
+#hero {
+    background:url('./images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    #inner-hero{
+        margin: 40px 33px 0 0;
+
+        button{
+                display:block;
+                font-size:2em;
+                font-family:'Slabo 13px', sans-serif;
+                background-color:$myblue;
+                border:none;
+                color:#FFF;
+                padding:0.3em;
+                margin-top:0.3em;
+                border-radius:10px;
+        }
+        span{
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-end;
+            span{   
+                width: 100%;
+                font-size: 3em;
+                color: $myblue;
+                margin-top: 7px;
+                padding: 5px 10px;
+                background-color: #FFF;
+                &:first-of-type{
+                    margin: 0;
+                }
+
+                
+            
+            }
+        }
+    }
+}
