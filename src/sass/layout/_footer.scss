@@ -1,4 +1,10 @@
-footer{
-    background:$myblue;
+footer
+{
+	background:$myblue;
 	min-height:200px;
+	color:#FFF;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left:20px;
 }

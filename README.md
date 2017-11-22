@@ -1,1 +1,1 @@
-U1 von Selina Brunner & Alexander Tischhart
+U1 von Selina Brunner und Alexander Tischhart
