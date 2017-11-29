@@ -47,6 +47,7 @@
 {
 	p{
 		font-size:0.8em;
+		line-height: 1.2em;
 	}
 	h3{
 		font-size:1em;
@@ -58,7 +59,7 @@
 		background:#EEEEEE;
 		min-height: 200px; 
 		border-radius:10px;
-		padding:1em;
+		padding:2em;
 		display:grid;
 		grid-gap:20px 20px;
 		grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
@@ -69,32 +70,61 @@
 {
 	#references-content
 	{
+		padding:0 1em;
 		display:grid;
 		grid-gap:20px 20px;
 		grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
 		align-items:center;
 		margin-top:1em;
 		margin-bottom:1em;
+
 		p{
 			font-style:italic;
+			line-height: 1.2em;
 		}
 
 		.quote{
 			font-size:0.8em;
 			text-align:right;
 			padding-top:0.4em;
+
 		}
 
 		div{
 			display:grid;
 			align-items:center;
-
+			padding:20px;
 			img
 			{
-				width:40%;
-				margin:0.5em auto;
+				width:60%;
+				margin:0.5em auto 1em auto;
 			}
 		}
 		
 	}
+}
+
+@media only screen and (max-width:500px) {
+
+body #site-content h2{
+		font-size: 1em;
+	}
+	body #site-content h3{
+		font-size: 0.6em;
+	}
+	body #site-content p {
+		font-size: 0.3em;
+	}
+	#references #references-content .quote{
+		font-size: 0.3em;
+	}
+
+	#references #references-content div img {
+		width:25%;
+	}
+
+	#references #references-content div{
+		max-width:100px;
+	}
+
 }

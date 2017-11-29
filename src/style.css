@@ -122,23 +122,23 @@ html {
   .header .menu-icon .navicon {
     background: #333;
     display: block;
-    height: 2px;
+    height: 5px;
     position: relative;
     transition: background .2s ease-out;
-    width: 18px; }
+    width: 40px; }
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
     background: #333;
     content: '';
     display: block;
-    height: 100%;
+    height: 5px;
     position: absolute;
     transition: all .2s ease-out;
     width: 100%; }
   .header .menu-icon .navicon:before {
-    top: 5px; }
+    top: 12px; }
   .header .menu-icon .navicon:after {
-    top: -5px; }
+    top: -12px; }
   .header .menu-btn {
     display: none; }
   .header .menu-btn:checked ~ .menu {
@@ -228,7 +228,8 @@ html {
       display: block; }
 
 #news p {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  line-height: 1.2em; }
 
 #news h3 {
   font-size: 1em;
@@ -240,12 +241,13 @@ html {
   background: #EEEEEE;
   min-height: 200px;
   border-radius: 10px;
-  padding: 1em;
+  padding: 2em;
   display: grid;
   grid-gap: 20px 20px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 
 #references #references-content {
+  padding: 0 1em;
   display: grid;
   grid-gap: 20px 20px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -253,17 +255,33 @@ html {
   margin-top: 1em;
   margin-bottom: 1em; }
   #references #references-content p {
-    font-style: italic; }
+    font-style: italic;
+    line-height: 1.2em; }
   #references #references-content .quote {
     font-size: 0.8em;
     text-align: right;
     padding-top: 0.4em; }
   #references #references-content div {
     display: grid;
-    align-items: center; }
+    align-items: center;
+    padding: 20px; }
     #references #references-content div img {
-      width: 40%;
-      margin: 0.5em auto; }
+      width: 60%;
+      margin: 0.5em auto 1em auto; }
+
+@media only screen and (max-width: 500px) {
+  body #site-content h2 {
+    font-size: 1em; }
+  body #site-content h3 {
+    font-size: 0.6em; }
+  body #site-content p {
+    font-size: 0.3em; }
+  #references #references-content .quote {
+    font-size: 0.3em; }
+  #references #references-content div img {
+    width: 25%; }
+  #references #references-content div {
+    max-width: 100px; } }
 
 footer {
   background: #159CE8;
@@ -273,3 +291,21 @@ footer {
   justify-content: center;
   flex-direction: column;
   padding-left: 20px; }
+
+#about {
+  width: 100%;
+  margin-top: 150px;
+  padding: 60px;
+  display: grid;
+  align-items: center; }
+  #about img {
+    width: 30%;
+    margin: auto; }
+  #about h1 {
+    text-align: center;
+    font-size: 47px;
+    color: #159CE8; }
+  #about p {
+    text-align: center; }
+  #about #cntnd {
+    padding: 20px 60px; }
